@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's bothering you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a6-TS-J6c">
+                                <rect key="frame" x="44" y="87" width="326" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="0pl-Ku-Kca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bNt-1z-cnP">
+                                <rect key="frame" x="87" y="241" width="242" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="Cl2-fT-gVh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="242" id="OR0-8Z-NZ1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="209" id="S8B-4F-bEC"/>
+                                    <constraint firstAttribute="width" constant="242" id="cTT-WO-2a6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmv-ni-HhV">
+                                <rect key="frame" x="87" y="636" width="242" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ASK ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZSh-Rq-5zw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bNt-1z-cnP" secondAttribute="trailing" constant="85" id="17w-6M-odO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9a6-TS-J6c" secondAttribute="trailing" constant="44" id="1xy-vU-i3Y"/>
+                            <constraint firstItem="hmv-ni-HhV" firstAttribute="trailing" secondItem="bNt-1z-cnP" secondAttribute="trailing" id="2SA-xb-1Dd"/>
+                            <constraint firstItem="hmv-ni-HhV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="6BY-fZ-PqV"/>
+                            <constraint firstItem="9a6-TS-J6c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="InW-pm-aim"/>
+                            <constraint firstItem="9a6-TS-J6c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="JQe-Ge-kRr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hmv-ni-HhV" secondAttribute="trailing" constant="85" id="YFp-qo-mwy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hmv-ni-HhV" secondAttribute="bottom" constant="172" id="bKN-fr-jgb"/>
+                            <constraint firstItem="hmv-ni-HhV" firstAttribute="leading" secondItem="bNt-1z-cnP" secondAttribute="leading" id="kab-zo-S3g"/>
+                            <constraint firstItem="bNt-1z-cnP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="qJS-hk-8tu"/>
+                            <constraint firstItem="bNt-1z-cnP" firstAttribute="top" secondItem="9a6-TS-J6c" secondAttribute="bottom" constant="78" id="xKR-HP-zx8"/>
+                            <constraint firstItem="hmv-ni-HhV" firstAttribute="top" secondItem="bNt-1z-cnP" secondAttribute="bottom" constant="186" id="xVN-2W-eiB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballImage" destination="bNt-1z-cnP" id="Se3-DJ-kAr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
